@@ -58,27 +58,27 @@ footer {
 }
 
 /* Article */
-.container {
+.container-article {
   width: 95%;
   max-width: 850px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.container h1 {
+.container-article h1 {
   text-align: center;
   font-size: 35px;
 
   margin-bottom: 0;
 }
 
-.container h2 {
+.container-article h2 {
   font-size: 30px;
 
   margin: 0;
 }
 
-.container p:first-of-type {
+.container-article p:first-of-type {
   text-align: center;
 
   font-size: 11px;
@@ -86,11 +86,11 @@ footer {
   margin-bottom: 30px;
 }
 
-.container p {
+.container-article p {
   line-height: 170%;
 }
 
-.container p:nth-of-type(2) {
+.container-article p:nth-of-type(2) {
   margin: 30px 10%;
 }
 
@@ -102,12 +102,20 @@ footer {
   font-style: italic;
 }
 
-.container a {
+.quotation::before {
+  content: '«';
+}
+
+.quotation::after {
+  content: '»';
+}
+
+.container-article a {
   color: #fe696a;
   text-decoration: none;
 }
 
-.container blockquote {
+.container-article blockquote {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   font-weight: bold;
