@@ -57,14 +57,16 @@ footer {
   margin-right: 5%;
 }
 
-/* Article */
-.container-article {
+/* Content containers*/
+.container-article,
+.container-stats {
   width: 95%;
   max-width: 850px;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Headers */
 .container-article h1 {
   text-align: center;
   font-size: 35px;
@@ -78,16 +80,21 @@ footer {
   margin: 0;
 }
 
+.container-stats h2 {
+  font-weight: lighter;
+}
+
+/* Paragraphs and font-style classes*/
+p {
+  line-height: 170%;
+}
+
 .container-article p:first-of-type {
   text-align: center;
 
   font-size: 11px;
 
   margin-bottom: 30px;
-}
-
-.container-article p {
-  line-height: 170%;
 }
 
 .container-article p:nth-of-type(2) {
@@ -103,14 +110,14 @@ footer {
 }
 
 .quotation::before {
-  content: '«';
+  content: "«";
 }
 
 .quotation::after {
-  content: '»';
+  content: "»";
 }
 
-.container-article a {
+a {
   color: #fe696a;
   text-decoration: none;
 }
@@ -130,4 +137,32 @@ footer {
 
 .end-of-article {
   font-size: 13px;
+}
+
+/* Lists */
+ul {
+  list-style: disc;
+}
+
+ul.list-icon {
+  list-style-image: url("../img/users.svg");
+}
+
+.container-stats ol li:first-of-type ul li,
+.container-stats ol > li > ul li {
+  margin-bottom: 15px;
+}
+
+.container-stats ol {
+  counter-reset: counter;
+  list-style: none;
+}
+
+.container-stats ol li > h2 {
+  counter-increment: counter;
+}
+
+.container-stats ol li > h2::before {
+  content: counter(counter) ". ";
+  font-size: 23px;
 }
