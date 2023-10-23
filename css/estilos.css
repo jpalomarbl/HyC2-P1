@@ -155,7 +155,14 @@ dd {
 a {
   color: #fe696a;
   text-decoration: none;
+  font-weight: bold;
 }
+
+a:hover, a:focus {
+  color: #f58383;
+  text-decoration: underline;
+}
+
 
 blockquote {
   font-family: "Times New Roman", Times, serif;
