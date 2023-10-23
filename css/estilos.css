@@ -14,6 +14,8 @@ header {
   flex-direction: column;
   align-items: center;
 
+  width: 100%;
+
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -50,6 +52,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: end;
+
+  width: 100%;
 
   font-weight: bold;
   font-style: italic;
@@ -97,12 +101,6 @@ h1 {
   font-weight: lighter;
 }
 
-.container-social h2 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 21px;
-  margin-bottom: 0;
-}
-
 /* Paragraphs and font-style classes*/
 p {
   line-height: 170%;
@@ -120,8 +118,12 @@ p {
   margin: 30px 10%;
 }
 
-.container-social h2 + p {
+.container-social dd > p {
   margin-top: 0;
+}
+
+dd {
+  margin-left: 0;
 }
 
 .container-social img + p,
@@ -130,6 +132,7 @@ p {
 }
 
 .container-social img + p {
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -201,4 +204,12 @@ ul.list-icon {
 .container-stats ol li > h2::before {
   content: counter(counter) ". ";
   font-size: 23px;
+}
+
+.container-social dt {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 21px;
+  font-weight: bold;
+
+  margin-top: 30px;
 }
