@@ -59,15 +59,28 @@ footer {
 
 /* Content containers*/
 .container-article,
-.container-stats {
+.container-stats,
+.container-social {
   width: 95%;
   max-width: 850px;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Center image inside div */
+.container-article img,
+.container-social img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-social img {
+  width: 40%;
+}
+
 /* Headers */
-.container-article h1 {
+h1 {
   text-align: center;
   font-size: 35px;
 
@@ -82,6 +95,12 @@ footer {
 
 .container-stats h2 {
   font-weight: lighter;
+}
+
+.container-social h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 21px;
+  margin-bottom: 0;
 }
 
 /* Paragraphs and font-style classes*/
@@ -99,6 +118,19 @@ p {
 
 .container-article p:nth-of-type(2) {
   margin: 30px 10%;
+}
+
+.container-social h2 + p {
+  margin-top: 0;
+}
+
+.container-social img + p,
+.container-social img + p + p {
+  font-size: 10px;
+}
+
+.container-social img + p {
+  text-align: center;
 }
 
 .bold {
@@ -122,7 +154,7 @@ a {
   text-decoration: none;
 }
 
-.container-article blockquote {
+blockquote {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   font-weight: bold;
@@ -133,6 +165,10 @@ a {
   border-style: solid;
   border-width: 0px 0px 0px 7px;
   border-color: #fe696a;
+}
+
+.container-social blockquote {
+  font-size: 15px;
 }
 
 .end-of-article {
